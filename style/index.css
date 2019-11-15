@@ -1,0 +1,68 @@
+/*
+* @Author: Administrator
+* @Date:   2019-11-15 17:56:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2019-11-15 17:57:05
+*/
+* {
+	margin:0;
+	padding:0;
+}
+ul li {
+	list-style:none;
+}
+.playBox {
+	position: relative;
+	width:720px;
+	height:280px;
+	margin:50px auto;
+}
+#imgList li.current {
+	display:block;
+	cursor:pointer;
+}
+#imgList li {
+	display:none;
+	width:720px;
+	height:280px;
+}
+#iconList {
+	position: absolute;
+	left: 50%;
+	bottom:10px;
+	margin-left:-45px;
+}
+#iconList li {
+	float:left;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#fff;
+	cursor:pointer;
+	font-size: 0;
+	margin: 0 4px;
+}
+#iconList li.current {
+	background:red;
+}
+.slideBar {
+	display:none;
+	position:absolute;
+	top: 50%;
+	width:30px;
+	height:50px;
+	line-height:50px;
+	margin-top:-25px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:30px;
+	cursor: pointer;
+	opacity:0.4;
+}
+.slideBar_left {
+	left: 0;
+}
+.slideBar_right {
+	right: 0;
+} 
